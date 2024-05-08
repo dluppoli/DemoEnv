@@ -1,0 +1,23 @@
+version: '3.0'
+services:
+  demoenv1:
+    image: dluppoli/demoenv:latest
+    ports:
+      - 4001:5555
+    environment:
+      - message=spiderman
+      - bgcolor=red
+  demoenv2:
+    image: dluppoli/demoenv:latest
+    ports:
+      - 4002:5555
+    environment:
+      - message=superman
+      - bgcolor=blue
+  demoenv3:
+    image: dluppoli/demoenv:latest
+    ports:
+      - 4003:5555
+    environment:
+      - message=posamen
+      - bgcolor=pink
